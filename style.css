@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+  caret-color: transparent;
+  cursor: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background: #ffffff;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#gallery {
+  height: 100vmax;
+  width: 150vw;
+  z-index: 3;
+}
+
+.cursorO {
+  height: 15px;
+  width: 15px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.arrow {
+  height: 20px;
+  width: auto;
+  border: 0px;
+  position: fixed;
+}
+
+.cursorA {
+  opacity: 0;
+}
+
+.cursorD {
+  height: 5px;
+  width: 5px;
+  background-color: white;
+}
+
+.cursorO, .cursorD, .cursorA {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.st {
+  color: white;
+  font-family: "HelveticaNeue", sans-serif;
+  font-weight: 900;
+  font-size: 6vw;
+  text-align: center;
+  display: inline;
+  text-decoration: none;
+}
+
+.images {
+  position: absolute;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.i1 {
+  width: 22vw;
+  top: 40vh;
+  left: 69.5vw;
+}
+
+.i2 {
+  width: 17vw;
+  top: 115vh;
+  right: 12vw;
+}
+
+.i3 {
+  width: 22vw;
+  top: 100vh;
+  left: 95vw;
+}
+
+.i4 {
+  width: 36vw;
+  top: 70vh;
+  left: 39.5vw;
+  z-index: -1;
+}
+
+.i5 {
+  width: 28vw;
+  top: 150vh;
+  left: 69vw;
+}
+
+.travis {
+  width: 35vw;
+  top: 50vh;
+  right: 29.5vw;
+  z-index: -1;
+}
+
+.guitar {
+  width: 40vw;
+  top: 25vh;
+  left: 5vw;
+}
+
+/* ysl.html */
+
+.ysl {
+  mix-blend-mode: difference;
+  font-family: "HelveticaNeue", sans-serif;
+  font-size: 1vw;
+  color: white;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.collections {
+  font-family: "HelveticaNeue", sans-serif;
+  font-size: 1vw;
+  color: white;
+  text-decoration: none;
+}
+
+.ranText {
+  position: absolute;
+  right: 0;
+  top: 58%;
+  font-family: "HelveticaNeue", sans-serif;
+  font-size: 5vh;
+  color: white;
+  text-decoration: none;
+  transform: rotate(-90deg);
+}
+
+.collectionImg {
+  width: 25vw;
+  height: auto;
+  left: 37.5vw;
+  transition: 800ms ease;
+}
+
+#image-track {
+  mix-blend-mode: difference;
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  z-index: 0;
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+  mix-blend-mode: difference;
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  filter: grayscale(100%);
+  z-index: -1;
+}
